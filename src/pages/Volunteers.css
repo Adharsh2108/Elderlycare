@@ -1,0 +1,170 @@
+/* Volunteer.css */ 
+body, html { 
+  height: 100%; 
+  margin: 0; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  background-color: #f5f7fa; 
+} 
+ 
+.volunteer-container { 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh; 
+  padding: 2rem; 
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),  
+              url("C:\Users\adhar\my-app\public\old4.png") no-repeat center center/cover; 
+} 
+ 
+.volunteer-container h1 { 
+  font-size: 2.5rem; 
+  color: #2c3e50; 
+  margin-bottom: 1rem; 
+  text-align: center; 
+  font-weight: 700; 
+} 
+ 
+.volunteer-container p { 
+  font-size: 1.1rem; 
+  color: #555; 
+  max-width: 600px; 
+  text-align: center; 
+  line-height: 1.6; 
+  margin-bottom: 2rem; 
+} 
+ 
+.signup-btn { 
+  padding: 12px 30px; 
+  font-size: 1.1rem; 
+  color: #fff; 
+  background: #4a6fa5; 
+  border: none; 
+  cursor: pointer; 
+  border-radius: 8px; 
+  font-weight: 600; 
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+} 
+ 
+.signup-btn:hover { 
+  background: #3a5a80; 
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+} 
+ 
+.volunteer-form { 
+  display: flex; 
+  flex-direction: column; 
+  width: 100%; 
+  max-width: 450px; 
+  background: #fff; 
+  padding: 2.5rem; 
+  border-radius: 12px; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
+  margin-top: 1.5rem; 
+  animation: fadeIn 0.5s ease; 
+} 
+ 
+.volunteer-form label { 
+  margin: 0.8rem 0 0.5rem; 
+  font-size: 1rem; 
+  color: #2c3e50; 
+  font-weight: 600; 
+} 
+ 
+.volunteer-form input { 
+  padding: 12px 15px; 
+  width: 100%; 
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  font-size: 1rem; 
+  transition: all 0.3s ease; 
+} 
+ 
+.volunteer-form input:focus { 
+outline: none; 
+border-color: #4a6fa5; 
+box-shadow: 0 0 0 3px rgba(74, 111, 165, 0.2); 
+} 
+.error { 
+border-color: #e74c3c !important; 
+} 
+.error:focus { 
+box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.2) !important; 
+} 
+small { 
+color: #e74c3c; 
+font-size: 0.85rem; 
+margin-top: 0.3rem; 
+display: block; 
+} 
+.submit-btn { 
+margin-top: 1.5rem; 
+padding: 12px; 
+font-size: 1.1rem; 
+color: white; 
+  background: #2ecc71; 
+  border: none; 
+  cursor: pointer; 
+  border-radius: 8px; 
+  font-weight: 600; 
+  transition: all 0.3s ease; 
+} 
+ 
+.submit-btn:hover { 
+  background: #27ae60; 
+  transform: translateY(-2px); 
+} 
+ 
+.submit-btn:active { 
+  transform: translateY(0); 
+} 
+ 
+.success-message { 
+  background: #fff; 
+  padding: 2rem; 
+  border-radius: 12px; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
+  text-align: center; 
+  max-width: 450px; 
+  animation: fadeIn 0.5s ease; 
+} 
+ 
+.success-message h2 { 
+  color: #2ecc71; 
+  font-size: 1.8rem; 
+  margin-bottom: 1rem; 
+} 
+ 
+.success-message p { 
+  color: #555; 
+  font-size: 1.1rem; 
+  margin-bottom: 0; 
+} 
+ 
+@keyframes fadeIn { 
+  from { opacity: 0; transform: translateY(10px); } 
+  to { opacity: 1; transform: translateY(0); } 
+} 
+ 
+/* Responsive adjustments */ 
+@media (max-width: 768px) { 
+  .volunteer-container { 
+    padding: 1.5rem; 
+  } 
+   
+  .volunteer-container h1 { 
+    font-size: 2rem; 
+  } 
+   
+  .volunteer-form { 
+    padding: 1.8rem; 
+  } 
+} 
+ 
+@media (max-width: 480px) { 
+  .volunteer-form { 
+    padding: 1.5rem; 
+  } 
+} 

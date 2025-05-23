@@ -1,0 +1,302 @@
+.services-container { 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 2rem 1rem; 
+  font-family: 'Arial', sans-serif; 
+} 
+ 
+.services-header { 
+  text-align: center; 
+  margin-bottom: 3rem; 
+} 
+ 
+.services-header h1 { 
+  font-size: 2.5rem; 
+  color: #2c3e50; 
+  margin-bottom: 1rem; 
+  font-weight: 700; 
+} 
+ 
+.services-description { 
+  max-width: 700px; 
+  margin: 0 auto 2rem; 
+  color: #555; 
+  font-size: 1.1rem; 
+  line-height: 1.6; 
+} 
+ 
+.services-grid { 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 2rem; 
+  margin: 2rem 0; 
+} 
+ 
+.service-card { 
+  background: #fff; 
+  border-radius: 12px; 
+  padding: 2rem 1.5rem; 
+  text-align: center; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); 
+  transition: all 0.3s ease; 
+  cursor: pointer; 
+  border: 1px solid rgba(0, 0, 0, 0.05); 
+  min-height: 280px; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+} 
+ 
+.service-card:hover { 
+  transform: translateY(-8px); 
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1); 
+  border-color: rgba(74, 111, 165, 0.2); 
+} 
+ 
+.service-card .icon { 
+  font-size: 3rem; 
+  color: #4a6fa5; 
+  margin-bottom: 1.5rem; 
+  background: rgba(74, 111, 165, 0.1); 
+  width: 80px; 
+  height: 80px; 
+  border-radius: 50%; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+} 
+ 
+.service-card h3 { 
+  margin: 1rem 0; 
+  color: #2c3e50; 
+  font-size: 1.4rem; 
+  font-weight: 600; 
+} 
+ 
+.service-card p { 
+  color: #666; 
+  font-size: 1rem; 
+line-height: 1.5; 
+margin-bottom: 1.5rem; 
+} 
+.learn-more { 
+margin-top: auto; 
+color: #4a6fa5; 
+font-weight: 600; 
+font-size: 0.95rem; 
+display: inline-flex; 
+align-items: center; 
+gap: 0.5rem; 
+transition: color 0.2s ease; 
+} 
+.service-card:hover .learn-more { 
+color: #3a5a80; 
+text-decoration: underline; 
+} 
+/* Service Details Section */ 
+.service-details { 
+background: #fff; 
+border-radius: 12px; 
+padding: 2.5rem; 
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); 
+margin-top: 2rem; 
+border: 1px solid rgba(0, 0, 0, 0.05); 
+} 
+.service-form { 
+display: flex; 
+flex-direction: column; 
+gap: 1.5rem; 
+animation: fadeIn 0.5s ease; 
+} 
+.service-form h2 { 
+color: #2c3e50; 
+margin-bottom: 1.5rem; 
+text-align: center; 
+font-size: 1.8rem; 
+} 
+.form-group { 
+display: flex; 
+flex-direction: column; 
+gap: 0.5rem; 
+} 
+.form-group label { 
+font-weight: 600; 
+color: #444; 
+font-size: 0.95rem; 
+} 
+.form-group input, 
+.form-group select, 
+.form-group textarea { 
+padding: 0.9rem 1rem; 
+border: 1px solid #ddd; 
+border-radius: 8px; 
+font-size: 1rem; 
+transition: border-color 0.3s ease; 
+} 
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus { 
+outline: none; 
+border-color: #4a6fa5; 
+box-shadow: 0 0 0 3px rgba(74, 111, 165, 0.1); 
+} 
+.form-group textarea { 
+min-height: 120px; 
+resize: vertical; 
+} 
+ 
+.submit-button { 
+  background-color: #4a6fa5; 
+  color: white; 
+  padding: 1rem; 
+  border: none; 
+  border-radius: 8px; 
+  font-size: 1.05rem; 
+  font-weight: 600; 
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+  margin-top: 0.5rem; 
+} 
+ 
+.submit-button:hover { 
+  background-color: #3a5a80; 
+  transform: translateY(-2px); 
+} 
+ 
+.back-button { 
+  background: rgba(74, 111, 165, 0.1); 
+  border: none; 
+  color: #4a6fa5; 
+  font-size: 1rem; 
+  font-weight: 600; 
+  cursor: pointer; 
+display: inline-flex; 
+align-items: center; 
+gap: 0.5rem; 
+margin-bottom: 1.5rem; 
+padding: 0.7rem 1.2rem; 
+border-radius: 8px; 
+transition: all 0.2s ease; 
+} 
+.back-button:hover { 
+background: rgba(74, 111, 165, 0.2); 
+} 
+/* Emergency Numbers Section */ 
+.emergency-section { 
+margin: 3rem 0; 
+} 
+.section-title { 
+font-size: 1.5rem; 
+color: #2c3e50; 
+margin-bottom: 1.5rem; 
+text-align: center; 
+} 
+.emergency-numbers { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 1.5rem; 
+  margin-bottom: 2rem; 
+} 
+ 
+.emergency-item { 
+  display: flex; 
+  align-items: center; 
+  gap: 1.2rem; 
+  font-size: 1.1rem; 
+  padding: 1.2rem; 
+  background: #f8f9fa; 
+  border-radius: 10px; 
+  transition: transform 0.3s ease; 
+} 
+ 
+.emergency-item:hover { 
+  transform: translateY(-3px); 
+  background: #f1f3f5; 
+} 
+ 
+.emergency-icon { 
+  font-size: 1.5rem; 
+  color: #e74c3c; 
+  background: rgba(231, 76, 60, 0.1); 
+width: 50px; 
+height: 50px; 
+border-radius: 50%; 
+display: flex; 
+align-items: center; 
+justify-content: center; 
+} 
+/* Upcoming Events Section */ 
+.upcoming-events { 
+margin: 3rem 0; 
+} 
+.events-grid { 
+display: grid; 
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+gap: 1.5rem; 
+} 
+.event { 
+background: #f8f9fa; 
+padding: 1.5rem; 
+border-radius: 10px; 
+transition: all 0.3s ease; 
+} 
+.event:hover { 
+  transform: translateY(-5px); 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); 
+} 
+ 
+.event h4 { 
+  margin: 0 0 0.8rem 0; 
+  color: #4a6fa5; 
+  font-size: 1.2rem; 
+} 
+ 
+.event-date { 
+  display: inline-block; 
+  background: rgba(74, 111, 165, 0.1); 
+  color: #4a6fa5; 
+  padding: 0.3rem 0.8rem; 
+  border-radius: 20px; 
+  font-size: 0.85rem; 
+  font-weight: 600; 
+  margin-bottom: 0.8rem; 
+} 
+ 
+.event p { 
+  margin: 0.3rem 0; 
+  color: #555; 
+  line-height: 1.5; 
+} 
+ 
+/* Responsive Adjustments */ 
+@media (max-width: 1024px) { 
+  .services-grid { 
+    grid-template-columns: repeat(2, 1fr); 
+  } 
+} 
+ 
+@media (max-width: 768px) { 
+  .services-header h1 { 
+    font-size: 2rem; 
+  } 
+   
+  .services-grid { 
+    grid-template-columns: 1fr; 
+    gap: 1.5rem; 
+  } 
+   
+  .service-card { 
+    min-height:fit-content; 
+    padding: 1.8rem 1.2rem; 
+  } 
+   
+  .service-details { 
+    padding: 1.5rem; 
+  } 
+} 
+ 
+@keyframes fadeIn { 
+  from { opacity: 0; transform: translateY(10px); } 
+  to { opacity: 1; transform: translateY(0); } 
+}
