@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Elderlycare/static/css/main.4b31ca45.css",
+    "main.js": "/Elderlycare/static/js/main.b35eea80.js",
+    "static/js/453.ad6eb26e.chunk.js": "/Elderlycare/static/js/453.ad6eb26e.chunk.js",
+    "static/media/old4.png": "/Elderlycare/static/media/old4.72298cfd1e3b03a9ce15.png",
+    "index.html": "/Elderlycare/index.html",
+    "main.4b31ca45.css.map": "/Elderlycare/static/css/main.4b31ca45.css.map",
+    "main.b35eea80.js.map": "/Elderlycare/static/js/main.b35eea80.js.map",
+    "453.ad6eb26e.chunk.js.map": "/Elderlycare/static/js/453.ad6eb26e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b31ca45.css",
+    "static/js/main.b35eea80.js"
+  ]
+}
